@@ -8,6 +8,8 @@ on:
 
 jobs:
   build-and-deploy:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,7 +29,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          # あなたのカスタムドメインを指定
           cname: kosuke-nakatani.jp
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
