@@ -1,0 +1,73 @@
+baseURL = "https://nakatani-msp.github.io/"
+defaultContentLanguage = "ja"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "ja"
+# Choose one of emacs, trac or perldoc
+pygmentsStyle = "monokai"
+theme = "gokarna"
+title = "Kosuke Nakatani"
+
+[params]
+  avatarAltText = "avatar"
+  avatarSize = "size-m"
+  avatarURL = "/neokiazunyan.png"
+
+  customHeadHTML = """
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  """
+  
+  description = "Ph.D. Student at The University of Osaka"
+  footer = "Kosuke Nakatani"
+  metaKeywords = ["blog", "gokarna", "hugo"]
+  showBackToTopButton = true # true or false for "back to top" button on posts and pages
+
+
+
+
+  socialIcons = [
+    {name = "X", url = "https://x.com/nakatanico"},
+    #{name = "linkedin", url = "https://example.com"},
+    #{name = "stackoverflow", url = "https://example.com"},
+    #{name = "dribbble", url = "https://example.com"},
+    #{name = "instagram", url = "https://example.com"},
+    #{name = "twitch", url = "https://example.com"},
+    {name = "github", url = "https://github.com/nakatani-msp"},
+    {name = "email", url = "mailto:k.nakatani@sip.comm.eng.osaka-u.ac.jp"}
+  ]
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+  #[[menu.main]]
+   #name = "Posts"
+   #pre = "<span data-feather='book'></span>"
+   #url = "/posts/"
+   #weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    pre = "<span data-feather='code'></span>"
+    url = "/projects/"
+    weight = 3
+
+
+
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
+
+[minify]
+    minifyOutput = true
